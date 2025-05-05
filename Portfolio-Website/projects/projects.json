@@ -10,6 +10,16 @@
     }
   },
   {
+    "name": "Real-Time-Chat-Application",
+    "desc": "This project is a real-time chat application .It allows multiple users to communicate instantly through a web interface.",
+    "image": "#",
+    "category": "basicweb",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/Sadiqueahmed/Real-Time-Chat-Application"
+    }
+  },
+  {
     "name": "Portfolio-Website",
     "desc": "This is a personal portfolio website showcasing my projects and skills.",
     "image": "#",
@@ -50,13 +60,13 @@
     }
   },
   {
-    "name": "",
-    "desc": "",
+    "name": "Car-Rental-System",
+    "desc": "Java OOPs Project - Java Car 🚗 Rental System Project | OOP Concepts & Implementation",
     "image": "",
-    "category": "",
+    "category": "basicweb",
     "links": {
       "view": "",
-      "code": ""
+      "code": "https://github.com/Sadiqueahmed/Car-Rental-System"
     }
   }
 ]
