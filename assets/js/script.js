@@ -67,6 +67,7 @@ document.addEventListener('visibilitychange',
             $("#favicon").attr("href", "assets/images/favhand.png");
         }
     });
+    
 
 
 // <!-- typed js effect starts -->
@@ -249,3 +250,59 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const term = new Terminal({
+        cursorBlink: true,
+        theme: {
+            background: '#000',
+            foreground: '#fff',
+        }
+    });
+
+    term.open(document.getElementById('terminal-container'));
+    term.writeln("Welcome to my portfolio terminal!");
+    term.write("> ");
+
+    let input = "";
+
+    term.onKey(({ key, domEvent }) => {
+        const char = key;
+
+        if (domEvent.key === "Enter") {
+            handleCommand(input.trim());
+            input = "";
+            term.write("\n> ");
+        } else if (domEvent.key === "Backspace") {
+            if (input.length > 0) {
+                input = input.slice(0, -1);
+                term.write('\b \b');
+            }
+        } else {
+            input += char;
+            term.write(char);
+        }
+    });
+
+    function handleCommand(cmd) {
+        switch (cmd) {
+            case "help":
+                term.writeln("Available commands: help, echo, clear");
+                break;
+            case "clear":
+                term.clear();
+                break;
+            default:
+                if (cmd.startsWith("echo ")) {
+                    term.writeln(cmd.slice(5));
+                } else if (cmd) {
+                    term.writeln(`Command not recognized: ${cmd}`);
+                }
+                break;
+        }
+    }
+});
