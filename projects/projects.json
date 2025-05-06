@@ -40,6 +40,16 @@
     }
   },
   {
+    "name": "HOSPITAL-MANAGEMENT-SYSTEM",
+    "desc": "A simple hospital management system.",
+    "image": "#",
+    "category": "basicweb",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/Sadiqueahmed/HOSPITAL-MANAGEMENT-SYSTEM"
+    }
+  },
+  {
     "name": "ChatGPT-Clone",
     "desc": "A clone of the ChatGPT interface using React and Tailwind CSS.",
     "image": "#",
