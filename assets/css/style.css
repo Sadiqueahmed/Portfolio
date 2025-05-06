@@ -1236,7 +1236,7 @@ form .button-area {
 /* terminal styles */
 #terminal-container {
   
-  margin-top: 9rem; /* Space from the top */
+  margin-top: 6rem; /* Space from the top */
   width: 100%; /* Adjust width for better responsiveness */
   max-width: 900px; /* Limit the width */
   height: 300px; /* Fixed height */
