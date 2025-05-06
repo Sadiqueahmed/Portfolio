@@ -20,6 +20,16 @@
     }
   },
   {
+    "name": "Snake-Game",
+    "desc": "A simple minimilistic snake game has been genrated using Java | Swing.",
+    "image": "#",
+    "category": "androidapp",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/Sadiqueahmed/Snake-Game"
+    }
+  },
+  {
     "name": "Portfolio-Website",
     "desc": "This is a personal portfolio website showcasing my projects and skills.",
     "image": "#",
@@ -53,7 +63,7 @@
     "name": "ChatGPT-Clone",
     "desc": "A clone of the ChatGPT interface using React and Tailwind CSS.",
     "image": "#",
-    "category": "mernstack",
+    "category": "#",
     "links": {
       "view": "#",
       "code": "#"
