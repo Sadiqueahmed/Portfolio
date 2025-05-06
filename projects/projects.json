@@ -26,14 +26,14 @@
     "category": "basicweb",
     "links": {
       "view": "#",
-      "code": "#"
+      "code": "https://github.com/Sadiqueahmed/Portfolio"
     }
   },
   {
     "name": "Weather-App",
     "desc": "A simple weather application that provides real-time weather updates.",
     "image": "#",
-    "category": "basicweb",
+    "category": "androidapp",
     "links": {
       "view": "#",
       "code": "#"
@@ -43,7 +43,7 @@
     "name": "ChatGPT-Clone",
     "desc": "A clone of the ChatGPT interface using React and Tailwind CSS.",
     "image": "#",
-    "category": "basicweb",
+    "category": "mernstack",
     "links": {
       "view": "#",
       "code": "#"
