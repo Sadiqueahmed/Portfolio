@@ -1239,7 +1239,7 @@ form .button-area {
   margin-top: 6rem; /* Space from the top */
   width: 100%; /* Adjust width for better responsiveness */
   max-width: 900px; /* Limit the width */
-  height: 300px; /* Fixed height */
+  height: 320px; /* Fixed height */
   background-color: #000000; /* Deep black background for a true terminal feel */
   color: #33cc33; /* Light green text color for a classic terminal effect */
   font-family: "Courier New", Courier, monospace; /* Monospace font */
