@@ -39,6 +39,10 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: #420177;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* pre loader start */
 .loader-container {
@@ -121,6 +125,9 @@ header .navbar ul li a:hover {
   border-bottom: 0.2rem solid #011aff;
   padding: 0.5rem 0;
 }
+
+
+
 /* navbar ends */
 
 /* hamburger icon starts*/
@@ -1223,3 +1230,7 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+
+
+
