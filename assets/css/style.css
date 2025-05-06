@@ -1233,12 +1233,69 @@ form .button-area {
 
 
 
-
+/* terminal styles */
 #terminal-container {
-  margin-left: 50%;
-  width: 100%;
-  height: 400px;
-  background-color: black;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
+  margin: 0 auto; /* Centers the terminal horizontally */
+  margin-top: 9rem; /* Space from the top */
+  width: 80%; /* Adjust width for better responsiveness */
+  max-width: 900px; /* Limit the width */
+  height: 400px; /* Fixed height */
+  background-color: #000000; /* Deep black background for a true terminal feel */
+  color: #33cc33; /* Light green text color for a classic terminal effect */
+  font-family: "Courier New", Courier, monospace; /* Monospace font */
+  font-size: 16px; /* Slightly larger font for readability */
+  padding: 20px; /* Add padding inside */
+  border-radius: 5px; /* Slightly rounded corners for modern look */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth */
+  overflow-y: auto; /* Allow vertical scrolling when content overflows */
+  position: relative; /* For adding a custom cursor */
+  border: 2px solid #333; /* Dark border to enhance the terminal look */
 }
+
+/* Customizing the terminal cursor */
+#terminal-container .xterm-cursor {
+  background-color: #33cc33; /* Green cursor */
+  animation: blink-caret 0.8s step-end infinite;
+  height: 1.2em; /* Adjust cursor height for better visibility */
+  width: 0.15em; /* Thin cursor for realism */
+}
+
+/* Cursor blinking animation */
+@keyframes blink-caret {
+  50% {
+    background-color: transparent; /* Make the cursor blink by toggling transparency */
+  }
+}
+
+/* Adding a subtle hover effect for the terminal */
+#terminal-container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9); /* Darker shadow on hover */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Optional: Adding a close button (mimicking a terminal window) */
+#terminal-container::before {
+  content: " "; /* No text content */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: #ff5f57; /* Red for close button */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#terminal-container::after {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 8px;
+  height: 8px;
+  background-color: #ffbd2e; /* Yellow for minimize button */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
