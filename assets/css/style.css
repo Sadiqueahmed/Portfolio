@@ -1229,70 +1229,84 @@ form .button-area {
 
 /* terminal styles */
 #terminal-container {
-  
-  margin-top: 6rem; /* Space from the top */
-  width: 100%; /* Adjust width for better responsiveness */
-  max-width: 900px; /* Limit the width */
-  height: 320px; /* Fixed height */
-  background-color: #000000; /* Deep black background for a true terminal feel */
-  color: #33cc33; /* Light green text color for a classic terminal effect */
-  font-family: "Courier New", Courier, monospace; /* Monospace font */
-  font-size: 16px; /* Slightly larger font for readability */
-  padding: 20px; /* Add padding inside */
-  border-radius: 5px; /* Slightly rounded corners for modern look */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth */
-  overflow-y: auto; /* Allow vertical scrolling when content overflows */
-  overflow-x: hidden; /* Hide horizontal overflow */
-  scrollbar-width: thin; /* Thin scrollbar for modern look */
-  scrollbar-color: #33cc33 #000000; /* Green scrollbar on black background */
-  position: relative; /* For adding a custom cursor */
-  border: 2px solid #333; /* Dark border to enhance the terminal look */
+  margin: 6rem auto 0 auto; /* Centered with top margin */
+  width: 90%; /* Use a percentage for responsiveness */
+  max-width: 900px; /* Limit the width on large screens */
+  height: auto; /* Let height grow with content if needed */
+  min-height: 320px; /* Minimum height */
+  background-color: #000000;
+  color: #33cc33;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #33cc33 #000000;
+  position: relative;
+  border: 2px solid #333;
 }
 
 /* Customizing the terminal cursor */
 #terminal-container .xterm-cursor {
-  background-color: #33cc33; /* Green cursor */
+  background-color: #33cc33;
   animation: blink-caret 0.8s step-end infinite;
-  height: 1.2em; /* Adjust cursor height for better visibility */
-  width: 0.15em; /* Thin cursor for realism */
+  height: 1.2em;
+  width: 0.15em;
 }
 
 /* Cursor blinking animation */
 @keyframes blink-caret {
   50% {
-    background-color: transparent; /* Make the cursor blink by toggling transparency */
+    background-color: transparent;
   }
 }
 
-/* Adding a subtle hover effect for the terminal */
+/* Hover effect */
 #terminal-container:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9); /* Darker shadow on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
   transition: box-shadow 0.3s ease-in-out;
 }
 
-/* Optional: Adding a close button (mimicking a terminal window) */
-#terminal-container::before {
-  content: " "; /* No text content */
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 8px;
-  height: 8px;
-  background-color: #ff5f57; /* Red for close button */
-  border-radius: 50%;
-  cursor: pointer;
-}
-
+/* Terminal control buttons */
+#terminal-container::before,
 #terminal-container::after {
   content: " ";
   position: absolute;
   top: 10px;
-  left: 20px;
   width: 8px;
   height: 8px;
-  background-color: #ffbd2e; /* Yellow for minimize button */
   border-radius: 50%;
   cursor: pointer;
 }
+
+#terminal-container::before {
+  left: 10px;
+  background-color: #ff5f57;
+}
+
+#terminal-container::after {
+  left: 22px;
+  background-color: #ffbd2e;
+}
+
+/* Mobile-specific tweaks */
+@media (max-width: 600px) {
+  #terminal-container {
+    font-size: 14px;
+    padding: 15px;
+    min-height: 250px;
+  }
+
+  #terminal-container::before,
+  #terminal-container::after {
+    top: 8px;
+    width: 7px;
+    height: 7px;
+  }
+}
+
 
 
