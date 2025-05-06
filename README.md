@@ -7,6 +7,10 @@ Welcome to my personal portfolio website repository! This project showcases my j
 Check out the live version of the portfolio here:  
 🔗 [sadique-portfolio.netlify.app](https://sadique-portfolio.netlify.app)
 
+Here’s a preview of the portfolio:
+
+![Portfolio Screenshot](assets/portfolio-screenshot.png)
+
 ## 📁 Project Structure
 
 The repository is organized as follows:
@@ -33,4 +37,26 @@ To run the project locally:
 
    ```bash
    git clone https://github.com/Sadiqueahmed/Portfolio.git
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd Portfolio
+
+2. **Open `index.html` in your preferred web browser.**
+
+   You can simply double-click the `index.html` file or use a live server extension if you're using VS Code.
+
+## 📬 Contact
+
+Feel free to reach out if you have any questions or opportunities:
+
+- 📧 Email: [sadiqueahmed40@gmail.com](mailto:sadiqueahmed40@gmail.com)
+- 💼 GitHub: [@Sadiqueahmed](https://github.com/Sadiqueahmed)
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+
 
