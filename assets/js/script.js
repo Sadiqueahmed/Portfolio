@@ -428,6 +428,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const term = new Terminal({
+        cursorBlink: true,
+        theme: {
+            background: '#000',
+            foreground: '#fff',
+        }
+    });
+
+    const fitAddon = new FitAddon.FitAddon(); // ✅ create fit addon
+    term.loadAddon(fitAddon); // ✅ load addon
+    term.open(document.getElementById('terminal-container')); // Open terminal
+    fitAddon.fit(); // ✅ fit to container size
+
+    window.addEventListener("resize", () => {
+        fitAddon.fit(); // ✅ refit on window resize
+    })
+});
+
+    // ... (your terminal logic remains the same)
+
+
+
+
 // <!-- terminal js ends -->
 
 
