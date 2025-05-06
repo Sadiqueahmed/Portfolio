@@ -39,10 +39,6 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: #420177;
 }
-html {
-  scroll-behavior: smooth;
-}
-
 
 /* pre loader start */
 .loader-container {
@@ -125,9 +121,6 @@ header .navbar ul li a:hover {
   border-bottom: 0.2rem solid #011aff;
   padding: 0.5rem 0;
 }
-
-
-
 /* navbar ends */
 
 /* hamburger icon starts*/
@@ -215,12 +208,12 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image {
-  flex: 1 1 30rem;
+  flex: 1 1 40rem;
   z-index: 1;
 }
 .home .image img {
-  width: 50%;
-  margin-left: 10rem;
+  width: 70%;
+  margin-left: 6rem;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
