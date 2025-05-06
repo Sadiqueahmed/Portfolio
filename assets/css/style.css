@@ -1248,6 +1248,9 @@ form .button-area {
   border-radius: 5px; /* Slightly rounded corners for modern look */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth */
   overflow-y: auto; /* Allow vertical scrolling when content overflows */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  scrollbar-width: thin; /* Thin scrollbar for modern look */
+  scrollbar-color: #33cc33 #000000; /* Green scrollbar on black background */
   position: relative; /* For adding a custom cursor */
   border: 2px solid #333; /* Dark border to enhance the terminal look */
 }
