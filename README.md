@@ -9,7 +9,7 @@ Check out the live version of the portfolio here:
 
 Here’s a preview of the portfolio:
 
-![Portfolio Screenshot](assets/portfolio-screenshot.png)
+![Portfolio Screenshot](assets/Screenshot-2025-05-06-125622.png)
 
 ## 📁 Project Structure
 
